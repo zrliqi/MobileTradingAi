@@ -1,0 +1,101 @@
+PROJECT NAME: Trading AI (Android App)
+
+TECH STACK:
+- Java (Android SDK)
+- Firebase (Authentication + Firestore)
+- Material Design 3
+- Web3 Integration (MetaMask via deep link or WalletConnect)
+- MVVM architecture
+
+APP PURPOSE:
+This app is a gateway ecosystem for the Trading AI Windows bot.
+It does NOT execute trades.
+It provides access, investment options, education, and affiliate system.
+
+MAIN FEATURES:
+
+1) AUTHENTICATION
+- Firebase Email/Password login
+- Google Sign-In
+- Store user data in Firestore:
+  userId
+  email
+  walletAddress
+  affiliateCode
+  referredBy
+  role (user/admin)
+
+2) HOME DASHBOARD (4 BUTTONS)
+- Use Windows Version
+- Invest via Web3
+- Education
+- Affiliate Program
+
+3) WINDOWS VERSION SECTION
+- Description of Windows Trading AI
+- Download button (external link)
+- Installation guide
+- FAQ section
+- No trading logic inside Android app
+
+4) WEB3 INVESTMENT SECTION
+- Connect MetaMask (deep link or WalletConnect)
+- Show connected wallet address
+- Invest button → triggers smart contract transaction
+- Track transaction hash
+- Show investment history
+- Show status (Pending / Confirmed / Claimed)
+- Do NOT store private keys
+- All signing must happen inside wallet
+
+5) EDUCATION SECTION
+- Course list
+- Course detail page
+- Paid course option
+- Enrollment system
+- Track user progress
+- Unlock content after payment
+
+6) AFFILIATE SYSTEM
+- Generate unique referral code per user
+- Track referred users in Firestore
+- Track commission %
+- Dashboard:
+  - Total referrals
+  - Active investors
+  - Commission earned
+  - Withdraw option
+
+7) ADMIN ROLE
+- View total users
+- View total investments
+- Manage courses
+- Manage affiliate settings
+- Enable/Disable investment
+
+SECURITY REQUIREMENTS:
+- Firebase security rules
+- No private key storage
+- Input validation
+- Secure API keys
+- Prevent duplicate investment submission
+
+UI REQUIREMENTS:
+- Clean modern UI
+- Dark mode support
+- Loading states
+- Error handling
+- Proper navigation (BottomNavigation or Drawer)
+
+DELIVERABLES:
+- Full Android project structure
+- Firebase setup guide
+- Web3 integration template
+- Firestore database structure
+- Sample security rules
+- Required Gradle dependencies
+
+IMPORTANT:
+- Show clear risk disclaimer
+- No guaranteed profit claims
+- Transparent user communication
