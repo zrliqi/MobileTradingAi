@@ -11,6 +11,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Firebase is now initialized via TradingAIApplication
         if (FirebaseManager.auth.currentUser != null) {
             startActivity(Intent(this, MainActivity::class.java))
         } else {
