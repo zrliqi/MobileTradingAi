@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.tradingai.mobile.R;
+import com.tradingai.app.R;
 
 public class MainActivity extends AppCompatActivity {
     @Override
