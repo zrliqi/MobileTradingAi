@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Top Part (Arrowhead) -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M100,20 L165,85 L100,65 L35,85 Z"
+        android:strokeColor="@color/white"
+        android:strokeWidth="6"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M100,20 L100,65"
+        android:strokeColor="@color/white"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"/>
+
+    <!-- Bottom Part (Diamond) -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M100,85 L165,115 L100,185 L35,115 Z"
+        android:strokeColor="@color/white"
+        android:strokeWidth="6"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"/>
+
+    <!-- Vertical Center Line -->
+    <path
+        android:pathData="M100,85 L100,185"
+        android:strokeColor="@color/white"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"/>
+
+    <!-- Horizontal Angled Lines -->
+    <path
+        android:pathData="M55,125 L90,135"
+        android:strokeColor="@color/white"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M145,125 L110,135"
+        android:strokeColor="@color/white"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"/>
+
+</vector>
