@@ -4,6 +4,7 @@ data class Course(
     val id: String = "",
     val title: String = "",
     val description: String = "",
+    val topics: List<String> = emptyList(),
     val level: String = "Beginner", // Beginner, Intermediate, Advanced
     val videoUrl: String = "",
     val docLink: String = ""

@@ -1,4 +1,4 @@
-package com.tradingai.app.fragments
+package com.tradingaiworld.app.ui.education
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,7 +16,8 @@ class EducationFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentEducationBinding.inflate(inflater, container, false)

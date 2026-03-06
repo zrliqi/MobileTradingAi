@@ -5,17 +5,17 @@
         android:icon="@android:drawable/ic_menu_today"
         android:title="Home" />
     <item
-        android:id="@+id/investFragment"
+        android:id="@+id/communityFragment"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Community" />
+    <item
+        android:id="@+id/investorFragment"
         android:icon="@android:drawable/ic_menu_view"
-        android:title="Invest" />
+        android:title="Investor" />
     <item
         android:id="@+id/educationFragment"
         android:icon="@android:drawable/ic_menu_agenda"
         android:title="Education" />
-    <item
-        android:id="@+id/affiliateFragment"
-        android:icon="@android:drawable/ic_menu_share"
-        android:title="Affiliate" />
     <item
         android:id="@+id/profileFragment"
         android:icon="@android:drawable/ic_menu_myplaces"

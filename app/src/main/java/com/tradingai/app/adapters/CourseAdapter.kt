@@ -3,6 +3,7 @@ package com.tradingai.app.adapters
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tradingai.app.databinding.ItemCourseBinding
@@ -25,6 +26,21 @@ class CourseAdapter(private val courses: List<Course>) :
         holder.binding.apply {
             tvCourseTitle.text = course.title
             tvCourseDescription.text = course.description
+            
+            // Timeline visibility
+            viewTopLine.visibility = if (position == 0) View.INVISIBLE else View.VISIBLE
+            viewBottomLine.visibility = if (position == itemCount - 1) View.INVISIBLE else View.VISIBLE
+
+            // Format topics as bullet points
+            if (course.topics.isNotEmpty()) {
+                val bulletPoints = course.topics.joinToString("\n") { "• $it" }
+                tvCourseTopics.text = bulletPoints
+                tvCourseTopics.visibility = View.VISIBLE
+                tvTopicsLabel.visibility = View.VISIBLE
+            } else {
+                tvCourseTopics.visibility = View.GONE
+                tvTopicsLabel.visibility = View.GONE
+            }
             
             btnWatchVideo.setOnClickListener {
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(course.videoUrl))

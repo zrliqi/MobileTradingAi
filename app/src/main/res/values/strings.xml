@@ -12,4 +12,8 @@
     <string name="beginner">Beginner</string>
     <string name="intermediate">Intermediate</string>
     <string name="advanced">Advanced</string>
+
+    <!-- Google Sign-In Web Client ID (Required for Google Sign-In to work) -->
+    <!-- You can get this from the Google Cloud Console or google-services.json -->
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
 </resources>
